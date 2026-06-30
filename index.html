@@ -17,9 +17,9 @@ html { scroll-behavior:smooth; }
 
 /* ── Tokens ── */
 :root {
-  --paper:   #fdfbf7;
-  --paper-2: #f7f2e8;
-  --paper-3: #ede5d5;
+  --paper:   #f5f0e8;
+  --paper-2: #ede6d6;
+  --paper-3: #e4dbc8;
   --ink:     #2c251a;
   --ink-mid: #6b5c48;
   --ink-soft:#a0917e;
@@ -43,7 +43,7 @@ body {
   color: var(--ink);
   font-family: 'Caveat', 'LXGW WenKai TC', serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.9;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -341,7 +341,7 @@ body.en-mode .nav-drawer a {
   margin-bottom: 2rem;
 }
 .story-body {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--ink-mid);
   line-height: 2.1;
 }
@@ -362,7 +362,7 @@ body.en-mode .service-desc {
 
 .story-verse {
   font-family: var(--serif-zh);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--ink);
   line-height: 2.3;
   padding-left: 1rem;
@@ -414,7 +414,7 @@ body.en-mode .service-desc {
 .about-role {
   font-family: var(--title-zh);
   font-style: normal;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--ink-mid);
   letter-spacing: 0.06em;
   margin: 0;
@@ -462,7 +462,7 @@ body.en-mode .service-desc {
 .cred-item {
   padding: 0.5rem 0;
   border-bottom: 1px solid var(--paper-3);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-family: 'Caveat', 'LXGW WenKai TC', serif;
   color: var(--ink-mid);
   line-height: 1.6;
@@ -470,10 +470,10 @@ body.en-mode .service-desc {
 }
 .cred-item:first-child { border-top: 1px solid var(--paper-3); }
 .cred-item > span { display: block; }
-
+.cred-dot { display: none; }
 .cred-item::before { content: none; }
 .about-body {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--ink-mid);
   line-height: 2.1;
 }
@@ -495,14 +495,14 @@ body.en-mode .service-desc {
 }
 .about-sig-sub {
   font-family: var(--serif-en);
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   color: var(--ink-soft);
   font-style: italic;
 }
 
 /* ── 4. Services ── */
 .services-intro {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--ink-mid);
   line-height: 1.9;
   margin-bottom: 2rem;
@@ -550,7 +550,7 @@ body.en-mode .service-desc {
 .service-en {
   font-family: var(--serif-en);
   font-style: italic;
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   color: var(--ink-soft);
   margin-bottom: 0.6rem;
 }
@@ -590,14 +590,14 @@ body.en-mode .num-btn {
   margin-bottom: 0.8rem;
 }
 .service-desc {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--ink-mid);
   line-height: 1.85;
 }
 
 .service-note {
   margin-top: 1.5rem;
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   color: var(--ink-soft);
   line-height: 1.9;
 }
@@ -616,7 +616,7 @@ body.en-mode .num-btn {
 }
 .tool-row-left h4 {
   font-family: var(--serif-zh);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 400;
   color: var(--ink);
   margin-bottom: 0.2rem;
@@ -624,7 +624,7 @@ body.en-mode .num-btn {
 .tool-row-left p {
   font-family: var(--serif-en);
   font-style: italic;
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   color: var(--ink-soft);
 }
 .tool-row-arrow {
@@ -644,7 +644,7 @@ body.en-mode .num-btn {
   color: var(--ink);
 }
 .num-label {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--ink-soft);
   letter-spacing: 0.06em;
   margin-bottom: 0.5rem;
@@ -669,7 +669,7 @@ body.en-mode .num-btn {
   outline: none;
   transition: border-color 0.2s;
 }
-.num-input::placeholder { color: var(--ink-soft); font-size: 0.95rem; }
+.num-input::placeholder { color: var(--ink-soft); font-size: 0.88rem; }
 .num-input:focus { border-color: var(--ink-mid); }
 .num-btn {
   padding: 0.6rem 1.2rem;
@@ -686,7 +686,7 @@ body.en-mode .num-btn {
 .num-btn:hover { border-color: var(--ink-mid); color: var(--ink); }
 .num-hint {
   margin-top: 0.5rem;
-  font-size: 0.82rem;
+  font-size: 0.7rem;
   color: var(--ink-soft);
 }
 .num-result {
@@ -712,13 +712,13 @@ body.en-mode .num-btn {
   margin-bottom: 0.8rem;
 }
 .num-result-desc {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--ink-mid);
   line-height: 2;
 }
 .num-result-cta {
   margin-top: 1.5rem;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--ink-soft);
   line-height: 1.9;
   padding-top: 1.2rem;
@@ -732,21 +732,21 @@ body.en-mode .num-btn {
   justify-content: flex-end;
   gap: 0.3rem;
   font-family: var(--hand);
-  font-size: 0.82rem;
+  font-size: 0.85rem;
 }
 .lang-btn {
   background: none;
   border: none;
   cursor: pointer;
   font-family: var(--hand);
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--ink-soft);
   padding: 0.2rem 0.4rem;
   transition: color 0.2s;
 }
 .lang-btn.active { color: var(--ink); border-bottom: 1px solid var(--ink-mid); }
 .lang-btn:hover { color: var(--ink-mid); }
-.lang-divider { color: var(--rule); font-size: 0.82rem; }
+.lang-divider { color: var(--rule); font-size: 0.7rem; }
 
 /* Hide/show by language */
 .zh { display: block; }
@@ -765,7 +765,7 @@ body.en-mode span.en, body.en-mode a.en { display: inline; }
 }
 .booking-flow-title {
   font-family: var(--title-zh);
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--ink-mid);
   letter-spacing: 0.06em;
   margin-bottom: 1.2rem;
@@ -789,7 +789,7 @@ body.en-mode span.en, body.en-mode a.en { display: inline; }
   align-items: center;
   justify-content: center;
   font-family: var(--serif-en);
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   color: var(--ink-soft);
   flex-shrink: 0;
   z-index: 1;
@@ -808,7 +808,7 @@ body.en-mode span.en, body.en-mode a.en { display: inline; }
 }
 .bflow-main {
   font-family: var(--serif-zh);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--ink);
   padding-top: 0.25rem;
   line-height: 1.6;
@@ -816,21 +816,21 @@ body.en-mode span.en, body.en-mode a.en { display: inline; }
 .bflow-sub {
   font-family: var(--serif-en);
   font-style: italic;
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   color: var(--ink-soft);
   margin-top: 0.15rem;
 }
 .bflow-note {
   font-family: var(--serif-en);
   font-style: italic;
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   color: var(--ink-soft);
   margin-top: 0.2rem;
 }
 
 /* ── 6. Contact ── */
 .contact-intro {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--ink-mid);
   line-height: 2.1;
   margin-bottom: 2.5rem;
@@ -847,7 +847,7 @@ body.en-mode span.en, body.en-mode a.en { display: inline; }
 .contact-list li:first-child { border-top: 1px solid var(--paper-3); }
 .c-label {
   font-family: var(--hand);
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--ink-soft);
   width: 3.5rem;
   flex-shrink: 0;
@@ -901,7 +901,7 @@ footer {
   color: var(--ink-soft);
 }
 .footer-copy {
-  font-size: 0.82rem;
+  font-size: 0.7rem;
   color: var(--ink-soft);
   letter-spacing: 0.04em;
 }
@@ -912,188 +912,7 @@ footer {
   to { opacity:1; transform:translateY(0); }
 }
 
-/* ── Reviews ── */
-.reviews-track-wrap {
-  margin: 0 calc(-1 * var(--gutter));
-  overflow: hidden;
-}
-.reviews-track {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  padding: 0.5rem var(--gutter) 1rem;
-  cursor: grab;
-  align-items: stretch;
-}
-.reviews-track:active { cursor: grabbing; }
-.reviews-track::-webkit-scrollbar { display: none; }
-.review-card {
-  flex: 0 0 calc(100% - var(--gutter) * 2);
-  scroll-snap-align: center;
-  background: var(--paper-2);
-  border: 1px solid var(--rule);
-  border-radius: 12px;
-  padding: 1.4rem 1.3rem 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-.review-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.review-stars {
-  display: inline-flex;
-  gap: 0.05rem;
-  font-size: 0.82rem;
-}
-.star-wrap {
-  position: relative;
-  display: inline-block;
-  color: var(--rule);
-  line-height: 1;
-}
-.star-wrap .star-fill {
-  position: absolute;
-  top: 0; left: 0;
-  overflow: hidden;
-  color: var(--clay);
-  white-space: nowrap;
-}
-.review-tag-pill {
-  font-family: var(--hand);
-  font-size: 0.82rem;
-  color: var(--moss);
-  background: var(--paper-3);
-  border-radius: 20px;
-  padding: 0.1rem 0.6rem;
-  white-space: nowrap;
-}
-.review-body {
-  font-size: 0.95rem;
-  color: var(--ink-mid);
-  line-height: 2;
-  flex: 1;
-}
-.review-body.truncated {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.review-read-more {
-  font-family: var(--serif-en);
-  font-style: italic;
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  border: none;
-  background: none;
-  cursor: pointer;
-  padding: 0;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  align-self: flex-start;
-}
-.review-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.7rem;
-  border-top: 1px solid var(--rule);
-}
-.review-author {
-  font-family: var(--serif-en);
-  font-style: italic;
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-}
-.review-date {
-  font-family: var(--serif-en);
-  font-style: italic;
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  opacity: 0.7;
-}
-.review-dots {
-  display: flex;
-  justify-content: center;
-  gap: 0.4rem;
-  margin-top: 0.8rem;
-}
-.review-dot {
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  background: var(--rule);
-  transition: background 0.3s;
-  cursor: pointer;
-}
-.review-dot.active { background: var(--ink-soft); }
-.review-submit-wrap {
-  margin-top: 1.5rem;
-  text-align: center;
-}
-.review-submit-link {
-  font-family: var(--serif-en);
-  font-style: italic;
-  font-size: 0.82rem;
-  color: var(--ink-soft);
-  text-decoration: none;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 0.1rem;
-}
-/* sticky overlay */
-.sticky-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(44,37,26,0.35);
-  z-index: 100;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1.5rem;
-  backdrop-filter: blur(2px);
-}
-.sticky-overlay.open { display: flex; }
-.sticky-note {
-  background: #fdf6e3;
-  border-radius: 2px 12px 12px 2px;
-  box-shadow: 3px 4px 18px rgba(44,37,26,0.18), -1px 0 0 #e8d9b5;
-  padding: 1.8rem 1.6rem 1.4rem;
-  max-width: 360px;
-  width: 100%;
-  position: relative;
-  max-height: 80vh;
-  overflow-y: auto;
-}
-.sticky-note::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0;
-  width: 0; height: 0;
-  border-style: solid;
-  border-width: 18px 0 0 18px;
-  border-color: transparent transparent transparent #d4c9a8;
-}
-.sticky-close {
-  position: absolute;
-  top: 0.8rem; right: 0.8rem;
-  background: none;
-  border: none;
-  font-size: 1rem;
-  color: var(--ink-soft);
-  cursor: pointer;
-  padding: 0.2rem 0.4rem;
-  line-height: 1;
-}
-.sticky-stars { font-size: 0.82rem; color: var(--clay); letter-spacing: 0.12em; margin-bottom: 0.8rem; }
-.sticky-text { font-family: var(--serif-zh); font-size: 0.95rem; color: var(--ink-mid); line-height: 2.1; margin-bottom: 1rem; white-space: pre-line; }
-.sticky-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.8rem; border-top: 1px solid var(--rule); }
-.sticky-author { font-family: var(--serif-en); font-style: italic; font-size: 0.82rem; color: var(--ink-soft); }
-.sticky-tag-pill { font-family: var(--hand); font-size: 0.82rem; color: var(--moss); background: var(--paper-3); border-radius: 20px; padding: 0.1rem 0.6rem; }
+
 
 </style>
 </head>
@@ -1200,10 +1019,10 @@ footer {
   </div>
   <div class="creds-row">
     <div class="creds">
-      <div class="cred-item"><span class="zh"><b>催眠引導師</b><br class="cred-br"><span class="cred-sep"> · </span>NGH 認證催眠師（NGH ID#95080）</span><span class="en"><b>Hypnosis Practitioner</b><br class="cred-br"><span class="cred-sep"> · </span>NGH Certified Hypnotist (NGH ID#95080)</span></div>
-      <div class="cred-item"><span class="zh"><b>正念講師</b><br class="cred-br"><span class="cred-sep"> · </span>MBSR 正念減壓課程認證師資</span><span class="en"><b>Mindfulness Instructor</b><br class="cred-br"><span class="cred-sep"> · </span>Certified MBSR Teacher</span></div>
-      <div class="cred-item"><span class="zh"><b>蒙特梭利教師</b><br class="cred-br"><span class="cred-sep"> · </span>AMS 幼兒教育認證（3–6歲）</span><span class="en"><b>Montessori Teacher</b><br class="cred-br"><span class="cred-sep"> · </span>AMS Early Childhood Credential (3–6)</span></div>
-      <div class="cred-item"><span class="zh"><b>生命藍圖解讀師</b><br class="cred-br"><span class="cred-sep"> · </span>彩虹數字、人類圖、基因密碼</span><span class="en"><b>Life Chart Reader</b><br class="cred-br"><span class="cred-sep"> · </span>Numerology, Human Design, Gene Keys</span></div>
+      <div class="cred-item"><div class="cred-dot"></div><span class="zh"><b>催眠引導師</b><br class="cred-br"><span class="cred-sep"> · </span>NGH 認證催眠師（NGH ID#95080）</span><span class="en"><b>Hypnosis Practitioner</b><br class="cred-br"><span class="cred-sep"> · </span>NGH Certified Hypnotist (NGH ID#95080)</span></div>
+      <div class="cred-item"><div class="cred-dot"></div><span class="zh"><b>正念講師</b><br class="cred-br"><span class="cred-sep"> · </span>MBSR 正念減壓課程認證師資</span><span class="en"><b>Mindfulness Instructor</b><br class="cred-br"><span class="cred-sep"> · </span>Certified MBSR Teacher</span></div>
+      <div class="cred-item"><div class="cred-dot"></div><span class="zh"><b>蒙特梭利教師</b><br class="cred-br"><span class="cred-sep"> · </span>AMS 幼兒教育認證（3–6歲）</span><span class="en"><b>Montessori Teacher</b><br class="cred-br"><span class="cred-sep"> · </span>AMS Early Childhood Credential (3–6)</span></div>
+      <div class="cred-item"><div class="cred-dot"></div><span class="zh"><b>生命藍圖解讀師</b><br class="cred-br"><span class="cred-sep"> · </span>彩虹數字、人類圖、基因密碼</span><span class="en"><b>Life Chart Reader</b><br class="cred-br"><span class="cred-sep"> · </span>Numerology, Human Design, Gene Keys</span></div>
     </div>
     <div class="cred-photo-placeholder">
       <img src="eric.JPG" alt="" class="about-photo">
@@ -1269,9 +1088,9 @@ footer {
       </div>
     </div>
     <div class="service-desc">
-      <p class="zh">整合「時間」與「空間」兩個維度的完整內在探索。在催眠引導下，先探索你的內在小屋，觀察其象徵結構與內在布局；在適當時刻可能進入時間回溯，觸及某段重要生命經驗；最後將理解帶回當下整合、釋放或重新調整內在狀態。</p>
+      <p class="zh">整合「時間」與「空間」兩個維度的完整內在探索。在催眠引導下，先探索你的內在小屋，觀察其象徵結構與內在布局；在適當時刻可能進入時間回溯，觸及某段重要生命經驗；最後將理解帶回當下整合，重新調整內在狀態。</p>
       <p class="zh" style="margin-top:0.8em;font-size:0.8rem;color:var(--ink-soft);">如果你希望從多個面向理解一個生命議題，或不確定該從哪個入口開始，這通常是最完整的選擇。</p>
-      <p class="en">A comprehensive inner journey integrating time and space. Under guided hypnosis, you first explore your Inner House and its symbolic structure. At times, the process may move into timeline regression, touching a significant experience. The insights are then brought back to the present — for integration, release, or realignment.</p>
+      <p class="en">A comprehensive inner journey integrating time and space. Under guided hypnosis, you first explore your Inner House and its symbolic structure. At times, the process may move into timeline regression, touching a significant experience. The insights are then brought back to the present for integration and realignment.</p>
       <p class="en" style="margin-top:0.8em;font-size:0.8rem;color:var(--ink-soft);">Often recommended if you wish to approach a life theme from multiple dimensions, or if you're unsure where to begin.</p>
     </div>
   </div>
@@ -1286,8 +1105,8 @@ footer {
       </div>
     </div>
     <div class="service-desc">
-      <p class="zh">以「空間維度」為核心的內在探索。在催眠引導下，透過潛意識你會觀察到自己的內在結構、象徵與信念系統，並進一步對當下浮現的狀態進行溫和的理解與整理。本服務主要聚焦於內在空間的覺察與調整，通常不主動展開時間回溯。</p>
-      <p class="en">An exploration centered on the spatial dimension of your inner world. Under guided hypnosis, you access your subconscious to observe your inner structures, symbols, and belief systems — and gently work with whatever surfaces in the present moment. The focus is on inner spatial awareness and reorganization, rather than actively entering timeline regression.</p>
+      <p class="zh">以「空間維度」為核心的內在探索。在催眠引導下，你會觀察內在結構、象徵與信念系統，並對當下浮現的狀態進行溫和的理解與整理。本服務主要聚焦於內在空間的覺察與調整，通常不主動展開時間回溯。</p>
+      <p class="en">An exploration centered on the spatial dimension of your inner world. Under guided hypnosis, you observe the symbolic structure and belief systems within your inner landscape. The focus is on present awareness and gentle reorganization, rather than timeline regression.</p>
     </div>
   </div>
 
@@ -1316,8 +1135,8 @@ footer {
       </div>
     </div>
     <div class="service-desc">
-      <p class="zh">結合正念、呼吸與身體覺察，透過催眠式放鬆引導與身體的內在對話。在深度放鬆中，練習以呼吸與覺察滋養身體，並連結內在的光與力量，作為可帶回日常的自我調節與內在賦能方式。</p>
-      <p class="en">A guided session combining mindfulness, breath, body awareness, and hypnotic relaxation. Through deep relaxation, we use breath and awareness to nourish the body, while reconnecting with a sense of inner steadiness and support as a grounded form of self-regulation and empowerment.</p>
+      <p class="zh">結合正念、呼吸與身體覺察，透過催眠式放鬆引導與身體的內在對話。在深度放鬆中，練習以呼吸與覺察滋養身體，並連結內在的光與支持源，作為可帶回日常的自我調節與內在賦能方式。</p>
+      <p class="en">A guided session combining mindfulness, breath, body awareness, and hypnotic relaxation. Through deep relaxation, we use breath and awareness to nourish the body, while reconnecting with inner light and support as a grounded form of self-regulation and empowerment.</p>
     </div>
   </div>
 
@@ -1331,31 +1150,18 @@ footer {
       </div>
     </div>
     <div class="service-desc">
-      <p class="zh">透過命盤（生命藍圖）的解讀，協助理解此刻正在展開的人生主題與內在課題。依個案狀態，以彩虹數字學為主，亦可能使用人類圖、Gene Keys 或其他命理工具輔助解讀。此會談著重於看見、理解與釐清，而非命定論斷或替你做決定。</p>
-      <p class="en">A chart reading session to explore your current life themes and inner patterns. Rainbow Numerology serves as the primary framework, with Human Design, Gene Keys, or other modalities used as needed. This session is oriented toward insight, self-understanding, and clarity — not prediction or prescription.</p>
-    </div>
-  </div>
-
-  <div class="service-item">
-    <div class="service-header">
-      <p class="service-name zh">海外遠距方案</p><p class="service-name en">International Remote Session</p>
-      <div class="service-meta">
-        <p class="service-price-tag"><span class="usd-tag">NTD</span> 6,000</p>
-        <span style="color:var(--rule);font-family:var(--serif-en);">/</span>
-        <p class="service-duration">150 mins</p>
-      </div>
-    </div>
-    <div class="service-desc">
-      <p class="zh">專為台灣及海外來訪者設計的遠距方案，透過 Google Meet 進行。150 分鐘內容可自由搭配，包含催眠探索、生命藍圖解讀，或兩者的組合，依你當下的狀態與需求靈活安排。</p>
-      <p class="en">A remote session designed for clients in Taiwan and beyond, held via Google Meet. The 150-minute session is flexible — you can choose hypnosis, a life chart reading, or a combination of both, depending on what you need.</p>
+      <p class="zh">透過命盤（生命藍圖）的解讀，協助理解此刻正在展開的人生主題與內在課題。依個案狀態，以彩虹數字學為主，亦可能使用人類圖、Gene Keys 或其他命理工具輔助解讀。此會談著重於看見與理解，不提供命定論斷式的預測，也不替你做人生決定。</p>
+      <p class="en">A chart reading session to explore your current life themes and inner patterns. Rainbow Numerology serves as the primary framework, with Human Design, Gene Keys, or other modalities used as needed. This session is oriented toward insight and understanding — not fatalistic prediction, and not making decisions for you.</p>
     </div>
   </div>
 
   <p class="service-note zh">
-    ＊ 所有 session 均包含探索前訪談與探索後整合討論
+    ＊ 所有 session 均包含探索前訪談與探索後整合討論<br>
+    ＊ 居家工作室（Bed-Stuy, Brooklyn）、晤談空間（Fidi Creatives, Manhattan）、遠距線上
   </p>
   <p class="service-note en">
-    ＊ All sessions include a pre-session intake and post-session integration discussion
+    ＊ All sessions include a pre-session intake and post-session integration discussion<br>
+    ＊ Home Studio in Bed-Stuy Brooklyn · Session Space at Fidi Creatives Manhattan · Online via Google Meet
   </p>
 
 
@@ -1367,6 +1173,8 @@ footer {
   <p class="section-eyebrow en">Rainbow Numerology</p>
   <h2 class="num-title zh" style="margin-bottom:0.3rem;">你是幾號人？</h2>
   <h2 class="num-title en" style="margin-bottom:0.3rem;">What's Your Number?</h2>
+  <p class="story-title-en zh" style="margin-bottom:1.2rem;">Rainbow Numerology</p>
+  <p class="story-title-en en" style="margin-bottom:1.2rem;">Enter your birthdate to find out</p>
 
   <p class="story-body zh" style="margin-bottom:2rem;">彩虹數字學是我目前最常使用的命理工具。你或許聽過生命靈數，或「你是幾號人」這個說法，這些都是數字學的概念。透過生日裡八個數字的計算與解讀，可以看見許多你還沒有意識到的自己。先來算算看，你是幾號人。</p>
   <p class="story-body en" style="margin-bottom:2rem;">Numerology is the tool I reach for most often in my practice. You may have heard of life path numbers — the idea that your birthdate holds a pattern worth paying attention to. Enter your birthday below and see which number you are.</p>
@@ -1377,6 +1185,8 @@ footer {
     <input type="text" id="numInput" class="num-input" placeholder="YYYY / MM / DD" maxlength="10">
     <button class="num-btn" onclick="calcNum()"><span class="zh">計算</span><span class="en">Go</span></button>
   </div>
+  <p class="num-hint zh">格式：年 / 月 / 日</p>
+  <p class="num-hint en">Format: YYYY / MM / DD</p>
 
   <div class="num-result" id="numResult">
     <div class="num-result-num" id="numNumber"></div>
@@ -1389,6 +1199,190 @@ footer {
 
 <!-- 6. Reviews -->
 <section class="section page" id="reviews">
+
+<style>
+.reviews-track-wrap {
+  margin: 0 calc(-1 * var(--gutter));
+  overflow: hidden;
+}
+.reviews-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0.5rem var(--gutter) 1rem;
+  cursor: grab;
+  align-items: stretch;
+}
+.reviews-track:active { cursor: grabbing; }
+.reviews-track::-webkit-scrollbar { display: none; }
+.review-card {
+  flex: 0 0 calc(100% - var(--gutter) * 2);
+  scroll-snap-align: center;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 1.4rem 1.3rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.review-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-stars {
+  display: inline-flex;
+  gap: 0.05rem;
+  font-size: 0.85rem;
+}
+.star-wrap {
+  position: relative;
+  display: inline-block;
+  color: var(--rule);
+  line-height: 1;
+}
+.star-wrap .star-fill {
+  position: absolute;
+  top: 0; left: 0;
+  overflow: hidden;
+  color: var(--clay);
+  white-space: nowrap;
+}
+.review-tag-pill {
+  font-family: var(--hand);
+  font-size: 0.7rem;
+  color: var(--moss);
+  background: var(--paper-3);
+  border-radius: 20px;
+  padding: 0.1rem 0.6rem;
+  white-space: nowrap;
+}
+.review-body {
+  font-size: 0.95rem;
+  color: var(--ink-mid);
+  line-height: 2;
+  flex: 1;
+}
+.review-body.truncated {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.review-read-more {
+  font-family: var(--serif-en);
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  align-self: flex-start;
+}
+.review-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule);
+}
+.review-author {
+  font-family: var(--serif-en);
+  font-style: italic;
+  font-size: 0.77rem;
+  color: var(--ink-soft);
+}
+.review-date {
+  font-family: var(--serif-en);
+  font-style: italic;
+  font-size: 0.73rem;
+  color: var(--ink-soft);
+  opacity: 0.7;
+}
+.review-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+.review-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--rule);
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.review-dot.active { background: var(--ink-soft); }
+.review-submit-wrap {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.review-submit-link {
+  font-family: var(--serif-en);
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.1rem;
+}
+/* sticky overlay */
+.sticky-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(44,37,26,0.35);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  backdrop-filter: blur(2px);
+}
+.sticky-overlay.open { display: flex; }
+.sticky-note {
+  background: #fdf6e3;
+  border-radius: 2px 12px 12px 2px;
+  box-shadow: 3px 4px 18px rgba(44,37,26,0.18), -1px 0 0 #e8d9b5;
+  padding: 1.8rem 1.6rem 1.4rem;
+  max-width: 360px;
+  width: 100%;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.sticky-note::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 18px 0 0 18px;
+  border-color: transparent transparent transparent #d4c9a8;
+}
+.sticky-close {
+  position: absolute;
+  top: 0.8rem; right: 0.8rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  line-height: 1;
+}
+.sticky-stars { font-size: 0.8rem; color: var(--clay); letter-spacing: 0.12em; margin-bottom: 0.8rem; }
+.sticky-text { font-family: var(--serif-zh); font-size: 0.9rem; color: var(--ink-mid); line-height: 2.1; margin-bottom: 1rem; white-space: pre-line; }
+.sticky-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 0.8rem; border-top: 1px solid var(--rule); }
+.sticky-author { font-family: var(--serif-en); font-style: italic; font-size: 0.77rem; color: var(--ink-soft); }
+.sticky-tag-pill { font-family: var(--hand); font-size: 0.7rem; color: var(--moss); background: var(--paper-3); border-radius: 20px; padding: 0.1rem 0.6rem; }
+</style>
 
   <p class="section-eyebrow zh">來過樹洞的人說</p>
   <p class="section-eyebrow en">Those Who Visited the Hollow</p>
@@ -1405,7 +1399,7 @@ footer {
         </div>
         <p class="review-body">從來沒算過命，也沒特別想了解自己的命數，但和 Eric 聊了一次之後覺得很有趣，受益良多。他說的關於我先生的某個特質，準得讓我當場笑出來。有興趣的人可以試試看。</p>
         <div class="review-footer">
-          <span class="review-author">— K.C.</span>
+          <span class="review-author">— K.</span>
           <span class="review-date">Jun 2026</span>
         </div>
       </div>
@@ -1502,8 +1496,8 @@ footer {
   <div class="review-dots" id="reviewDots"></div>
 
   <div class="review-submit-wrap">
-    <a href="https://forms.gle/BY2z7GxkNUS49FtBA" target="_blank" class="review-submit-link zh">你也來過樹洞了嗎？寫下你的感受。</a>
-    <a href="https://forms.gle/BY2z7GxkNUS49FtBA" target="_blank" class="review-submit-link en">Been to the hollow? Share how it felt.</a>
+    <a href="https://forms.gle/msVbxuxgZskDvA8N8" target="_blank" class="review-submit-link zh">你也來過樹洞了嗎？寫下你的感受。</a>
+    <a href="https://forms.gle/msVbxuxgZskDvA8N8" target="_blank" class="review-submit-link en">Been to the hollow? Share how it felt.</a>
   </div>
 </section>
 
@@ -1526,7 +1520,7 @@ footer {
   <p class="section-eyebrow zh">Contact · 聯繫</p>
   <p class="section-eyebrow en">Contact</p>
   <p class="contact-intro zh">有任何問題，或想了解探索的流程，歡迎直接與我聯繫。服務以中文為主，亦提供英文。</p>
-  <p class="contact-intro en">If you have questions or want to learn more about how a session works, feel free to reach out. Sessions are conducted in English or Mandarin Chinese, depending on your preference.</p>
+  <p class="contact-intro en">If you have questions or want to learn more about how a session works, feel free to reach out. Sessions are available in English and Mandarin Chinese.</p>
 
   <ul class="contact-list">
     <li>
@@ -1552,31 +1546,27 @@ footer {
         <div class="bflow-num">1</div>
         <div class="bflow-line"></div>
         <div class="bflow-content">
-          <p class="bflow-main">填寫預約表單或私訊</p>
-          <p class="bflow-note">透過預約表單或 Instagram 私訊 @eric.hypnotist 與我聯繫。</p>
+          <p class="bflow-main">填寫預約表單 <span class="bflow-sub">或 Instagram 私訊 @eric.hypnotist</span></p>
         </div>
       </div>
       <div class="bflow-step">
         <div class="bflow-num">2</div>
         <div class="bflow-line"></div>
         <div class="bflow-content">
-          <p class="bflow-main">確認時間與細節</p>
-          <p class="bflow-note">24 小時內回覆，一起確認時間、方式與探索方向。</p>
+          <p class="bflow-main">24 小時內確認時間與細節</p>
         </div>
       </div>
       <div class="bflow-step">
         <div class="bflow-num">3</div>
         <div class="bflow-line"></div>
         <div class="bflow-content">
-          <p class="bflow-main">72 小時內完成付款</p>
-          <p class="bflow-note">Venmo @eric12356 · Zelle eric.wp.cheng@gmail.com</p>
+          <p class="bflow-main">72 小時內完成付款 <span class="bflow-sub">Venmo @eric12356 · Zelle eric.wp.cheng@gmail.com</span></p>
         </div>
       </div>
       <div class="bflow-step">
         <div class="bflow-num">4</div>
         <div class="bflow-content">
           <p class="bflow-main">預約正式成立</p>
-          <p class="bflow-note">收到付款確認後，預約即成立。期待在樹洞見到你。</p>
         </div>
       </div>
     </div>
@@ -1590,31 +1580,27 @@ footer {
         <div class="bflow-num">1</div>
         <div class="bflow-line"></div>
         <div class="bflow-content">
-          <p class="bflow-main">Fill out the form or send a DM</p>
-          <p class="bflow-note">Use the booking form or message me on Instagram @eric.hypnotist.</p>
+          <p class="bflow-main">Fill out the booking form <span class="bflow-sub">or DM on Instagram @eric.hypnotist</span></p>
         </div>
       </div>
       <div class="bflow-step">
         <div class="bflow-num">2</div>
         <div class="bflow-line"></div>
         <div class="bflow-content">
-          <p class="bflow-main">Confirm time and details</p>
-          <p class="bflow-note">I'll reach out within 24 hours to confirm the session format and timing.</p>
+          <p class="bflow-main">I'll confirm within 24 hours</p>
         </div>
       </div>
       <div class="bflow-step">
         <div class="bflow-num">3</div>
         <div class="bflow-line"></div>
         <div class="bflow-content">
-          <p class="bflow-main">Complete payment within 72 hours</p>
-          <p class="bflow-note">Venmo @eric12356 · Zelle eric.wp.cheng@gmail.com</p>
+          <p class="bflow-main">Full payment within 72 hours <span class="bflow-sub">Venmo @eric12356 · Zelle eric.wp.cheng@gmail.com</span></p>
         </div>
       </div>
       <div class="bflow-step">
         <div class="bflow-num">4</div>
         <div class="bflow-content">
           <p class="bflow-main">Your booking is confirmed</p>
-          <p class="bflow-note">Once payment is received, your spot is secured. See you at the hollow.</p>
         </div>
       </div>
     </div>
@@ -1630,10 +1616,12 @@ footer {
 </section>
 
 <!-- Footer -->
-<footer>
-  <span class="footer-brand">樹根樹洞 · The Roots Hollow</span>
-  <span class="footer-copy">© 2026 Eric CH · NGH #95080</span>
-</footer>
+<div style="max-width:var(--max);margin:0 auto;">
+  <footer>
+    <span class="footer-brand">樹根樹洞 · The Roots Hollow</span>
+    <span class="footer-copy">© 2026 Eric CH · NGH #95080</span>
+  </footer>
+</div>
 
 <script>
 // Nav
@@ -1665,20 +1653,12 @@ function setLang(lang) {
     document.body.classList.add('en-mode');
     document.getElementById('btnEn').classList.add('active');
     document.getElementById('btnZh').classList.remove('active');
-    try { history.replaceState(null, '', '?lang=en'); } catch(e) {}
   } else {
     document.body.classList.remove('en-mode');
     document.getElementById('btnZh').classList.add('active');
     document.getElementById('btnEn').classList.remove('active');
-    try { history.replaceState(null, '', window.location.pathname); } catch(e) {}
   }
 }
-
-// 頁面載入時讀取 ?lang=en
-(function() {
-  const params = new URLSearchParams(window.location.search);
-  if (params.get('lang') === 'en') setLang('en');
-})();
 
 // Toggle story ZH
 function toggleStoryZh() {
@@ -1856,5 +1836,6 @@ function closeReviewSticky(e) {
   document.body.style.overflow = '';
 }
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
